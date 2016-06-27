@@ -61,9 +61,39 @@ $ cat .gitconfig
 
 #Remove git by deleting .git directory
 
-#Adding git changes
+#Adding git changes to staging index
 git add .
 
 #Commit to git repository
+git commit -m "Gabriel: Initial commit"
+
+#viewing git log
+$ git log
+commit 5e393f00a6e0d5fb357ad9ce918e59494057f270
+Author: Gabriel Quinones <someone@nowhere.com>
+Date:   Sun Jun 26 18:54:49 2016 -0500
+
+    Gabriel: Initial commit
+
+#view logs options
+git log -n 5
+git log --since=2016-06-15
+git log --until=2016-06-15
+git log --author="Gabriel"
+git log --grep="Init"
+
+#HEAD points to tip of current branch
+#Points to the last commit
+
+#Checking status to synchronize
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
 
 
