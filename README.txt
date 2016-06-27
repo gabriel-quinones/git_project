@@ -96,4 +96,29 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
+#Viewing the modifications
+git diff
 
+#Removing file
+git rm <file_to_delete>
+git reset HEAD or git commit <file> -m "comment"
+
+#renaming files will be tracked 
+#as deleted then untracked file
+#until its staged
+git mv <file> <rename-file>
+
+#move to another folder
+git mv <file> <dir>/<file>
+
+#committing all changes
+git commit -am "message"
+
+#Undoing Changes to working directory
+#if you want to stay on the same branch
+git checkout -- <file/directory>
+
+#undo changes to staging area
+git reset HEAD <file-to-reset>
+
+#undoing commits 
