@@ -161,3 +161,7 @@ cat .git/HEAD or git branch (*)
 
 #switch to new branch
 git checkout <new-branch-name>
+
+#checkout as a new branch
+git checkout -b <new-branch>
+
