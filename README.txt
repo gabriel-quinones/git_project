@@ -121,4 +121,46 @@ git checkout -- <file/directory>
 #undo changes to staging area
 git reset HEAD <file-to-reset>
 
-#undoing commits 
+#undoing commits
+git revert <sha-substring>
+
+#WARNING: move HEAD pointer
+git reset --soft (keeps working directory changes)
+git reset --mixed (changes staging index)
+git reset --hard (changes working and index)
+
+#git location
+project/.gitignore
+
+#gitignore syntax
+* ? [aeiou] [0-9]
+*.php
+!index.php
+assets/videos/
+
+#ignore url
+https://github.com/github/gitignore
+
+#stop tracking a file and rm from repository
+git rm --cached <file>
+
+#refurring to commit tree
+git HEAD^^ or git HEAD~2
+
+#view git tree
+git ls-tree HEAD
+
+#view current branches
+git branch
+
+#creating a new branch
+git branch <branch-name>
+
+#view branch you are on
+cat .git/HEAD or git branch (*)
+
+#switch to new branch
+git checkout <new-branch-name>
+
+#checkout as a new branch
+git checkout -b <new-branch>
