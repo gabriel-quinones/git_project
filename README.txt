@@ -164,3 +164,30 @@ git checkout <new-branch-name>
 
 #checkout as a new branch
 git checkout -b <new-branch>
+
+#show remotes
+git remote
+
+#add a remote location
+git remote add origin https://github.com/gabriel-quinones/git_project.git
+
+#PUSH local commits to remote server
+$ git push -u origin master
+Counting objects: 15, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (15/15), 2.61 KiB | 0 bytes/s, done.
+Total 15 (delta 3), reused 0 (delta 0)
+To https://github.com/gabriel-quinones/git_project.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+#cloning repository
+git clone https://github.com/gabriel-quinones/git_project.git
+
+#FETCH sync to local branch
+git fetch origin
+
+#MERGE to working repository
+git merge origin/master
+
