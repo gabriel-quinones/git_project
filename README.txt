@@ -191,3 +191,6 @@ git fetch origin
 #MERGE to working repository
 git merge origin/master
 
+#PULL = Fetch + Merge
+git pull origin/master
+
